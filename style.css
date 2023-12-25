@@ -1,0 +1,159 @@
+@font-face{
+    font-family: cooper;
+    src: url(./cooper_lt_bt.zip);
+    
+    }
+    
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: cooper;
+
+
+}
+html, body{
+height: 100%;
+width: 100%;
+background-color: rgba(236, 229, 220, 0.562);
+
+}
+#main {
+height: 100%;
+width: 100%;
+background-color: white;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+#nav{
+
+height: 100px;
+width: 100%;
+position: fixed;
+top: 0;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+#nav>h1{
+font-size: 28px;
+font-weight: 100;
+
+
+
+}
+#nav #part2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+#nav #part2 a {
+text-decoration: none;
+color: black;
+margin: 20px;
+
+
+
+}
+#nav #part2 a:nth-child(6) {
+
+padding:8px 19px ;
+border-radius: 50px;
+position: relative;
+overflow: hidden;
+border: 1px solid #000;
+
+
+}
+#nav #part2 a:nth-child(6) #green{
+width: 100%;
+background-color: springgreen;
+height: 100%;
+position: absolute;
+top: 0;
+left: -100%;
+transition: left 0.4s ease;
+
+
+}
+#nav #part2 a:nth-child(6) h5{
+font-weight: 100;
+position: relative;
+z-index: 99;
+
+}
+
+#nav #part2 a:nth-child(6):hover #green{
+left:0;
+
+
+} 
+#main>h1{
+font-size:5.5vw ;
+width: 60%;
+text-align: center;
+z-index: 99;
+font-weight: 100;
+text-transform: capitalize;
+
+
+}
+#main>h1::after{
+content: "";
+position: absolute;
+width: 35%;
+height: 16px;
+background-image:url(https://thisisdigital.co.uk/dist/images/underline-green.svg) ;
+bottom: -5%;
+left: 50%;
+background-size: cover;
+transform: translate(-50%,0);
+
+
+
+
+}
+#main #img1{
+height: 490px;
+width: 348px;
+position: absolute;
+left: 6%;
+top: 20%;
+
+
+}
+#main #img2{
+    height: 200px;
+    width: 270px;
+    position: absolute;
+    right: 23%;
+    top: 18%;
+    
+    
+    }
+    #main #img3{
+        height: 235px;
+        width: 240px;
+        position: absolute;
+        right: 7%;
+        bottom: 6%;
+        
+        
+        }
+        #main img{
+transition: margin 0.8s ease;
+
+
+        }
+        #main img:hover{
+            margin-top:-20px ;
+        }
